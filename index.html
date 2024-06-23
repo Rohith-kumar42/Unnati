@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Web Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Akaya Kanadaka' rel='stylesheet'>
+<style>
+  body {
+    background-color: black;
+    color: #ffffff;
+    font-family: 'Akaya Kanadaka';
+  }
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  height: 50px;
+}
+
+.nav li {
+  float: left;
+  
+}
+
+.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-left: 100px;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+
+    * {
+      box-sizing: border-box;
+    }
+    
+    .slideshow-container {
+      width: 30%;
+      position: relative;
+      margin-left: 100px;
+    }
+    
+    .mySlides {
+      display: none;
+    }
+    
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+
+.carousel-container {
+  margin-left: 100px;
+  width: 50%;
+  position: relative;
+  background: #ffffff00;
+
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-slide {
+  display: none;
+  width: 140%;
+ 
+}
+
+.carousel-slide li{
+  width: 55%;
+  height: 200px;
+  list-style: none;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  color: #111;
+  border-radius: 5%;
+  background-color: #ffffff;
+}
+
+.carousel-text {
+  width: 1200px;
+  padding: 20px;
+  color: #ffffff;
+  background-color:none;
+  margin-left: 100px;
+  padding-top: 50px;
+  background-color: #626262;
+  border-radius: 30px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -22px;
+  font-weight: bold;
+  font-size: 18px;
+  user-select: none;
+  background-color: transparent;
+  border: none;
+  color:#111;
+}
+
+.next {
+  left: 270px;
+  color:rgb(0, 0, 0);
+  width: 0px;
+  transition: 1.5ms;
+}
+
+.prev {
+  left: 0;
+  color: rgb(0, 0, 0) ;
+  width: 0px;
+  transition: 0.5ms;
+}
+.carousel-container a{
+  color:gray;
+  text-decoration: none;
+
+}
+.carousel-container li:hover{
+  background-color: white;
+}
+.carousel-container a:hover{
+  background-color: rgb(255, 255, 255);
+}
+
+</style>
+</head>
+<body>
+  
+<ul class="nav">
+  <li><a><img src="../../Gamercult/assets/Images/COD.png"></a></li>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+  <li style="float:right;"></li>
+    <form class="search-form" action="/search" method="GET">
+      <input type="text" name="query"  placeholder="Search.." style="color: #111;border-radius: 15px;margin-top: 11px;height: 25px;margin-left: 280px;" >
+    
+    </form>
+  </li>
+  <li style="margin-top: -42px;float: right;">
+    <a href="#profile">
+      <button style="font-size:24px;background-color: #626262;color: black;border:none;border-radius: 50%;"><i class="fa fa-user-circle-o"></i></button>    </a>
+  </li>
+</ul>
+   <br><br><br><br>
+   <div class="carousel-container">
+    <div class="carousel-slide">
+       <li class="ihp-breakdown__grid-cards-item" >
+          <i class="fa fa-hospital-o" style="font-size:30px"></i>
+          <h3 class="util-type util-type--h5">HOSPITAL</h3>
+          </a>
+       </li>
+       <div class="carousel-text">
+          <p><span style="font-size: 24px;">Health Services Web Application</span><br>
+             This web application helps users find the nearest top-rated hospitals,doctors, and diagnostic centers. It provides cost estimates, health insurance coverage details, elder care and nurse service contacts, and information on nearby emergency services like oxygen supply.
+          </p>
+       </div>
+    </div>
+    <div class="carousel-slide">
+       <li class="ihp-breakdown__grid-cards-item" >
+          <i class="fa fa-hospital-o" style="font-size:30px"></i>
+          <h3 class="util-type util-type--h5">EDUCATION</h3>
+          </a>
+       </li>
+       <div class="carousel-text">
+          <p><span style="font-size: 24px;">Education Resources Web Application</span><br>
+             This web application helps users find the nearest schools, tuition centers, and learning material stores. It provides fee structures, second-hand material options, arts and sports activity centers, and details on industry training and job aid centers.  
+          </p>
+       </div>
+    </div>
+    <div class="carousel-slide">
+       <li class="ihp-breakdown__grid-cards-item" >
+          <i class="fa fa-hospital-o" style="font-size:30px"></i>
+          <h3 class="util-type util-type--h5">GOVERNMENT SERVICES</h3>
+          </a>
+       </li>
+       <div class="carousel-text">
+          <p><span style="font-size: 24px;">Government Services Web Application</span><br>
+             This web application helps users find the nearest government offices for Aadhar, land registration, passport services, and more. It provides details on housing plan approvals, ration card and voter ID centers, government schemes for various groups, and contacts for pension, PF, and gratuity consultants   
+          </p>
+       </div>
+    </div>
+    <div class="carousel-slide">
+       <li class="ihp-breakdown__grid-cards-item" >
+          <i class="fa fa-hospital-o" style="font-size:30px"></i>
+          <h3 class="util-type util-type--h5">TRANSPORTATION</h3>
+          </a>
+       </li>
+       <div class="carousel-text">
+          <p><span style="font-size: 24px;">Transportation Services Web Application</span><br>
+             This web application helps users find transportation options including auto, 2-wheeler, car, bus, and air services. It provides cost comparisons for services like Ola/Uber, nearest vehicle service centers, bus stations with arrival timings, on-spot vehicle service contacts, and buy/sell vehicle listings. 
+          </p>
+       </div>
+    </div>
+    <div class="carousel-slide">
+       <li class="ihp-breakdown__grid-cards-item" >
+          <i class="fa fa-hospital-o" style="font-size:30px"></i>
+          <h3 class="util-type util-type--h5">HOUSING SERVICES</h3>
+          </a>
+       </li>
+       <div class="carousel-text">
+          <p><span style="font-size: 24px;">Housing Services Web Application</span><br>
+             This web application helps users find housing-related services like electricians, plumbers, carpenters, and painters. It provides contacts for community helpers, food and water suppliers, maids, packers and movers, and details about house renting and purchasing. 
+          </p>
+       </div>
+    </div>
+    <div class="carousel-slide">
+       <li class="ihp-breakdown__grid-cards-item" >
+          <i class="fa fa-hospital-o" style="font-size:30px"></i>
+          <h3 class="util-type util-type--h5">FINANCIAL SERVICES</h3>
+          </a>
+       </li>
+       <div class="carousel-text">
+          <p><span style="font-size: 24px;">Financial Services Web Applicatio</span><br>
+             This web application helps users find banking, tax, and insurance services. It provides interest rates from different banks for housing loans, tax-saving plan details, and personalized recommendations.
+          </p>
+       </div>
+    </div>
+        
+        
+          <button class="prev" onclick="prevSlide()">❮</button>
+          <button class="next" onclick="nextSlide()">❯</button>
+        </div>
+  <br>
+</body>
+</html><script>
+let currentSlide = 0;
+
+function showSlide(index) {
+  const slides = document.querySelectorAll('.carousel-slide');
+  if (index >= slides.length) currentSlide = 0;
+  if (index < 0) currentSlide = slides.length - 1;
+  
+  slides.forEach((slide, i) => {
+    slide.style.display = (i === currentSlide) ? 'flex' : 'none';
+  });
+}
+
+function nextSlide() {
+  currentSlide++;
+  showSlide(currentSlide);
+}
+
+function prevSlide() {
+  currentSlide--;
+  showSlide(currentSlide);
+}
+
+// Initialize carousel
+showSlide(currentSlide);
+
+
+</script>
